@@ -1,0 +1,59 @@
+<h1>Paper, Rock, Scissors - Let's Play!</h1>
+<h2>Rules</h2>
+<p>The "rock" beats scissors, the "scissors" beat paper and the "paper" beats rock</p>
+<p>If both players throw the same shape, the game is tied</p>
+<div class="p-r-s">
+  <div class="one_three">
+    <h3>Take your pick</h3>
+    <ul class="choices" data-service="<%= throw_path %>">
+      <li>
+        <a class="game-on" data-choice="paper" alt="Paper">
+          <%= image_tag("paper.png", width: "50") %>
+        </a>
+      </li>
+      <li>
+        <a class="game-on" data-choice="rock" alt="Rock">
+          <%= image_tag("rock.png", width: "50") %>
+        </a>
+      </li>
+      <li>
+        <a class="game-on" data-choice="scissors" alt="Scissors">
+          <%= image_tag("scissors.png", width: "50") %>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3>Choices</h3>
+    <ul class="decider">
+      <li>
+        <span>Player:</span>
+        <span id="playerChoice">Pick one to get started!</span>
+      </li>
+      <li>
+        <span>Computer:</span>
+        <span id="computerChoice">You first!</span>
+      </li>
+    </ul>
+  </div>
+  <div id="results">
+    <h3>Results</h3>
+    <ul class="decider">
+      <li>
+        <p id="gameResult"></p>
+      </li>
+    </ul>
+    <div class="retry">
+      <%= link_to root_path, alt: "Retry" do %>
+        <%= image_tag "retry.png", width: "50" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    var game = new Game();
+    game.init();
+  });
+</script>
