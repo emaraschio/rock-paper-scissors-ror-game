@@ -10,7 +10,7 @@ function Game() {
 
   this.throw = function(e){
     var choice = $(e.target).parent("a").data("choice");
-    var ajax = $.post(throw_service_url,{player_choice: choice});
+    var ajax = $.post(throw_service_url,{sign: choice});
     ajax.done(function(data) {
       $("#results").fadeIn();
       $("#playerChoice").html(choice);

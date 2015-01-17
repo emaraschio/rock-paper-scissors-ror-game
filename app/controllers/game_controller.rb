@@ -3,7 +3,7 @@ class GameController < ApplicationController
   end
 
   def throw
-    game = Game.new(params[:player_choice])
+    game = Game.new(params[:sign])
     render json: { result: game.play, computer_choice: game.computer_choice }
   end
 end
