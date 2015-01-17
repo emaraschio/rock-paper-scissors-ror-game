@@ -2,7 +2,7 @@ body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td{m
 .main-body {margin: 2em auto 0;max-width: 720px; padding: 10px;}
 .p-r-s h3{font-size:1.1em}
 .p-r-s .choices{text-align:center}
-.p-r-s .choices li{display:inline-block;width:25%}
+.p-r-s .choices li{display:inline-block;width:25%;cursor:pointer}
 .p-r-s .decider li{border:5px solid #2a2829;display:block;float:left;padding:5px 10px;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .p-r-s .decider li{margin-bottom:20px;margin-top:10px}
 .p-r-s .decider li span{margin-right:20px}
