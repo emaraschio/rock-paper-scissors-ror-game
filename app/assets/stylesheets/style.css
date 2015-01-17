@@ -9,3 +9,4 @@ body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td{m
 .p-r-s #playerChoice,.p-r-s #computerChoice{font-weight:700;}
 .p-r-s #gameResult {font-weight:900;color:red;text-align:center;text-transform:uppercase;}
 .p-r-s .retry {text-align:center;display:block;}
+.p-r-s a:hover {opacity:0.3;}
